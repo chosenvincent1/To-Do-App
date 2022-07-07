@@ -1,0 +1,147 @@
+
+:root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eee;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: var(--dark);
+    color: white;
+}
+
+.head-container {
+    padding: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head-container h1 {
+    color: var(--gray);
+    font-size: 30px;
+    margin-bottom: 5px;
+
+}
+
+.to-do-list {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    appearance: none;
+    background: none;
+}
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+#new-task-btn {
+    color: var(--purple);
+    background-color: rgb(18, 18, 161);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px;
+}
+#new-task-btn:hover {
+    opacity: 0.6;
+}
+#new-task-btn:active {
+    opacity: 0.6;
+}
+
+.task-list-container {
+    /* flex: 1 1 0%; */
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 10px;
+}
+
+.task-list h2 {
+    color: var(--gray);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.first-task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.first-task .task {
+    flex: 1 1 0%;
+}
+
+.first-task .task  .text {
+    width: 100%;
+    display: block;
+    color: var(--gray);
+    font-size: 18px;
+}
+.first-task .task  .text:not(:read-only) {
+    color: var(--light);
+}
+
+.first-task .btn-container {
+    display: flex;
+}
+
+.first-task .btn-container button {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.first-task .btn-container button:hover {
+    opacity: 0.6;
+}
+.first-task .btn-container button:active {
+    opacity: 0.6;
+}
+
+.first-task .btn-container .edit {
+    color: var(--purple);
+}
+.first-task .btn-container .remove {
+    color: crimson;
+}
+
